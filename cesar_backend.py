@@ -4,7 +4,7 @@ import sqlite3
 
 
 app = Flask(__name__)
-conn = sqlite3.connect('../requests.db', check_same_thread=False)
+conn = sqlite3.connect('requests.db', check_same_thread=False)
 cur = conn.cursor()
 
 if __name__ == '__main__':
